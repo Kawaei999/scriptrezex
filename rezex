@@ -1,4 +1,24 @@
+
+
+
+repeat task.wait() until game:IsLoaded()
+repeat task.wait() until game.Players
+repeat task.wait() until game.Players.LocalPlayer
+repeat task.wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui")
+repeat task.wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("Main");
 _G.Team = "Pirate" -- Marine / Pirate
+_G.KAITUN_SCRIPT = true
+_G.LogsDes = {
+    ["Enabled"] = true, -- เปิดการใช้งาน
+    ["SendAlias"] = true, -- เปิดการส่ง Alias
+    ["SendDescription"] = true, -- เปิดการส่ง Des
+    ["DelaySend"] = 5 -- วินาที
+}
+_G.WebHook = {
+    ["Enabled"] = true, -- เปิดการใช้งาน
+    ["Url"] = "", -- ลิ้งค์เว็บฮุก
+    ["Delay"] = 60 -- วินาที
+}
 _G.MainSettings = {
         ["EnabledHOP"] = true, -- เปิด HOP ( มันไม่มีอยู่ละใส่มาเท่ๆ )
         ['FPSBOOST'] = true, -- ภาพกาก        
@@ -37,10 +57,9 @@ _G.Races_Settings = { -- ตั้งค่าเผ่า
             ["Races"] = { -- Select Races U want
                 ["Mink"] = false,
                 ["Human"] = false,
-                ["Fishman"] = true,
-                ["Skypiea"] = false
+                ["Fishman"] = true
             },
-            ["RerollsWhenFragments"] = 30000 -- Random Races When Your Fragments is >= Settings
+            ["RerollsWhenFragments"] = 20000 -- Random Races When Your Fragments is >= Settings
         }
     }
 }
@@ -57,18 +76,10 @@ _G.FarmMastery_Settings = {
     ['Sword'] = true,
     ['DevilFruits'] = true,
     ['Select_Swords'] = {
-        ["AutoSettings"] = true, -- ถ้าเปิดอันนี้มันจะเลือกดาบให้เองหรือฟาร์มทุกดาบนั่นเอง        
-                    ["ManualSettings"] = { -- ถ้าปรับ AutoSettings เป็น false มันจะฟาร์มดาบที่เลือกตรงนี้ ตัวอย่างข้างล่าง
-            "Cursed Dual Katana",
-            "Tushita",
-            "Yama",
-            "Wando",
-            "Shisui",
-            "Saddi",
+        ["AutoSettings"] = true, -- ถ้าเปิดอันนี้มันจะเลือกดาบให้เองหรือฟาร์มทุกดาบนั่นเอง
+        ["ManualSettings"] = { -- ถ้าปรับ AutoSettings เป็น false มันจะฟาร์มดาบที่เลือกตรงนี้ ตัวอย่างข้างล่าง
             "Saber",
-            "Hallow Scryte",
-            "True Triple Katana",
-            "Pole"
+            "Buddy Sword"
         }
     }
 }
@@ -88,12 +99,15 @@ _G.SwordSettings = { -- ดาบที่จะทำ
     ['TrueTripleKatana'] = true,
     ['CursedDualKatana'] = true
 }
+_G.SharkAnchor_Settings = {
+    ["Enabled_Farm"] = true,
+}
 _G.GunSettings = { -- ปืนที่จะทำ
     ['Kabucha'] = true,
     ['SerpentBow'] = true,
     ['SoulGuitar'] = true
 }
-
+-- Script Here !!!
 getgenv().Key = "MARU-XA0T-5YE0J-9VD9-JPG2H-51R0"
 getgenv().id = "1021981504450089000"
 getgenv().Script_Mode = "Kaitun_Script"
