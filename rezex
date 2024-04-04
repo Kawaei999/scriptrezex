@@ -1,6 +1,3 @@
-
-
-
 repeat task.wait() until game:IsLoaded()
 repeat task.wait() until game.Players
 repeat task.wait() until game.Players.LocalPlayer
@@ -53,14 +50,14 @@ _G.Races_Settings = { -- ตั้งค่าเผ่า
     ['Race'] = {
         ['EnabledEvo'] = true,
         ["v2"] = true,
-        ["v3"] = false,
+        ["v3"] = true,
         ["Races_Lock"] = {
             ["Races"] = { -- Select Races U want
                 ["Mink"] = false,
                 ["Human"] = false,
                 ["Fishman"] = true
             },
-            ["RerollsWhenFragments"] = 20000 -- Random Races When Your Fragments is >= Settings
+            ["RerollsWhenFragments"] = 50000 -- Random Races When Your Fragments is >= Settings
         }
     }
 }
