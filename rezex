@@ -16,7 +16,7 @@ _G.MainSettings = {
         ["EnabledHOP"] = true, -- เปิด HOP ( มันไม่มีอยู่ละใส่มาเท่ๆ )
         ['FPSBOOST'] = true, -- ภาพกาก
         ["FPSLOCKAMOUNT"] = 60, -- จำนวน FPS
-        ['WhiteScreen'] = false, -- จอขาว
+        ['WhiteScreen'] = true, -- จอขาว
         ['CloseUI'] = true, -- ปิด Ui
         ["NotifycationExPRemove"] = true, -- ลบ ExP ที่เด้งตอนฆ่ามอน
         ['AFKCheck'] = 150, -- ถ้ายืนนิ่งเกินวิที่ตั้งมันจะรีเกม
@@ -81,7 +81,7 @@ _G.FarmMastery_Settings = {
 }
 _G.SwordSettings = { -- ดาบที่จะทำ
     ['Saber'] = true,
-    ["Pole"] = true,
+    ["Pole"] = false,
     ['MidnightBlade'] = true,
     ['Shisui'] = true,
     ['Saddi'] = true,
@@ -90,17 +90,17 @@ _G.SwordSettings = { -- ดาบที่จะทำ
     ['Rengoku'] = true,
     ['Canvander'] = true,
     ['BuddySword'] = true,
-    ['TwinHooks'] = true,
+    ['TwinHooks'] = false,
     ['HallowScryte'] = true,
     ['TrueTripleKatana'] = true,
     ['CursedDualKatana'] = true
 }
 _G.SharkAnchor_Settings = {
-    ["Enabled_Farm"] = false,
+    ["Enabled_Farm"] = true,
 }
 _G.GunSettings = { -- ปืนที่จะทำ
     ['Kabucha'] = true,
-    ['SerpentBow'] = true,
+    ['SerpentBow'] = false,
     ['SoulGuitar'] = true
 }
 -- Script Here !!!
